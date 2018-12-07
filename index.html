@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>PRUEBA PROGRAMACION 4º SISTEMAS</title>
+<script>
+function resultado() {
+  var nom
+
+  if (document.getElementById('p12').checked==true) {nom='Correcto'}
+  else {nom='Incorrecto.'}
+
+
+  alert(' Su nombre es ' + nom);
+  location.reload();
+}
+</script>
+</head>
+<body>
+<h2>N o m b r e</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p> ¿Cual es su nombre? </p>
+<input type="radio" name="pregunta1" id="p11"> Luis Haro </p>
+<input type="radio" name="pregunta1" id="p12"> Santiago Loachamin </p>
+<input type="radio" name="pregunta1" id="p13"> Carlos Osorio  </p>
+
+<hr>
+<p><input type="button" value=" TERMINAR " onclick="resultado()"/></p>
+</form>
+</body>
+</html>
